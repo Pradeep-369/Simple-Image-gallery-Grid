@@ -95,8 +95,7 @@ border-radius: 20px;
     border-radius: 10px;
  transform: scale(0.96);
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-
-  
+object-fit: contain;  
   }
 }
 
