@@ -1,0 +1,128 @@
+html{
+  box-sizing:border-box;
+}
+*,::after,::before{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  line-height:1.4;
+}
+.header{
+  margin-top:  20px;
+  text-align: center;
+  font-family: lobster;
+
+}
+.header h1{
+  text-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.mail address > p{
+    text-align: center;
+  font-weight: bold;
+  color: #FF1744;
+}
+.mail p:not(address > p){
+  text-align: center;
+font-family: 'Source Code Pro', monospace;
+}
+.cheer-up-author{
+ max-width: fit-content;
+  margin-inline: auto;
+  margin-block: 10px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+    animation: up-and-down  1s  ease-in-out infinite;
+}
+.cheer-up-author a{
+  background: black;
+  display: block;
+    padding: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+font-family: 'Big Shoulders Stencil Display', cursive;
+  
+}
+
+.cheer-up-author:hover, .cheer-up-author:focus, .cheer-up-author:active{
+
+  animation: up-and-down  1s  ease-in-out 2;
+
+}
+.grid{
+  width: 100vw;
+    display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  margin-top: 20px;
+}
+img{
+  max-width: 100%;
+  object-fit:cover;
+}
+.grid > div{
+  display: flex;
+}
+.grid > div:hover img{
+border-radius: 20px;
+    transform : scale(1.5);
+  box-shadow: 0px 0px 1000px 1000px rgba(0,0,0,0.5);
+   
+}
+@media screen and (max-width: 650px) {
+  .grid{
+    grid-template-columns: 100vw;
+    width: 98vw;
+    margin: auto;
+    
+    
+  }
+  .grid  div{
+    padding: 0 10px 10px 10px;
+      width:98vw;
+    margin: auto;
+    margin-top:7px;
+  }
+  .grid div:hover img{
+    border-radius: 10px;
+ transform: scale(0.96);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+
+  
+  }
+}
+
+@keyframes up-and-down {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
